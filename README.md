@@ -103,9 +103,9 @@ new Chart(ctx).LogarithmicLine(data, {
 
   We can also change these defaults values for each LogarithmicLine type that is created, this object is available at `Chart.defaults.LogarithmicLine`.
 
-  ### Prototype methods
+### Prototype methods
 
-  #### .getPointsAtEvent( event )
+#### .getPointsAtEvent( event )
 
   Calling `getPointsAtEvent(event)` on your Chart instance passing an argument of an event, or jQuery event, will return the point elements that are at that the same position of that event.
 
@@ -118,7 +118,7 @@ new Chart(ctx).LogarithmicLine(data, {
 
   This functionality may be useful for implementing DOM based tooltips, or triggering custom behaviour in your application.
 
-  #### .update( )
+#### .update( )
 
   Calling `update()` on your Chart instance will re-render the chart with any updated values, allowing you to edit the value of multiple existing points, then render those in one animated render loop.
 
@@ -129,7 +129,7 @@ new Chart(ctx).LogarithmicLine(data, {
   // Calling update now animates the position of March from 96 to 50.
   ```
 
-  #### .addData( valuesArray, label )
+#### .addData( valuesArray, label )
 
   Calling `addData(valuesArray, label)` on your Chart instance passing an array of values for each dataset, along with a label for those lines.
 
