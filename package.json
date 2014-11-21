@@ -9,6 +9,6 @@
     "url": "https://github.com/LastElb/Chart.LogarithmicLine.js.git"
   },
   "dependences": {
-    "Chart.js": ">= 1.0.0-beta"
+    "Chart.js": ">= 1.0.1-beta.4"
   }
 }
