@@ -3,12 +3,12 @@
   "homepage": "https://github.com/LastElb/Chart.LogarithmicLine.js",
   "description": "Line chart implementation with logarithmic y-axis for Chart.js",
   "private": true,
-  "version": "0.1",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/LastElb/Chart.LogarithmicLine.js.git"
   },
   "dependences": {
-    "Chart.js": ">= 1.0.0-beta"
+    "Chart.js": ">= 1.0.1-beta.4"
   }
 }

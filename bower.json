@@ -1,6 +1,6 @@
 {
   "name": "Chart.LogarithmicLine.js",
-  "version": "0.1",
+  "version": "0.1.1",
   "description": "Line chart implementation with logarithmic y-axis for Chart.js",
   "homepage": "https://github.com/LastElb/Chart.LogarithmicLine.js",
   "author": "LastElb",
@@ -8,6 +8,6 @@
     "Chart.LogarithmicLine.js"
   ],
   "dependencies": {
-    "Chart.js": "1.0.0-beta"
+    "Chart.js": "1.0.1-beta.4"
   }
 }
