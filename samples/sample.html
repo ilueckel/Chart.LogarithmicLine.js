@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Logarithmic Line Chart</title>
-  <script src="../src/Chart.min.js"></script>
+  <script src="../vendor/Chart.min.js"></script>
   <script src="../src/Chart.LogarithmicLine.js"></script>
 </head>
 <body>
@@ -17,27 +17,25 @@
     labels : ["January","February","March","April","May","June","July"],
     datasets : [
     {
-      fillColor : "rgba(220,220,220,0.5)",
-      strokeColor : "rgba(220,220,220,0.8)",
-      highlightFill: "rgba(220,220,220,0.75)",
-      highlightStroke: "rgba(220,220,220,1)",
-      data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+      label: "My First dataset",
+      fillColor : "rgba(220,220,220,0.2)",
+      strokeColor : "rgba(220,220,220,1)",
+      pointColor : "rgba(220,220,220,1)",
+      pointStrokeColor : "#fff",
+      pointHighlightFill : "#fff",
+      pointHighlightStroke : "rgba(220,220,220,1)",
+		  data: [1, 15, -96, 150, 600, 5000, 9000]
     },
     {
-      fillColor : "rgba(151,187,205,0.5)",
-      strokeColor : "rgba(151,187,205,0.8)",
-      highlightFill : "rgba(151,187,205,0.75)",
-      highlightStroke : "rgba(151,187,205,1)",
-      data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-    },
-    {
-      fillColor : "rgba(240,73,73,0.5)",
-      strokeColor : "rgba(240,73,73,0.8)",
-      highlightFill : "rgba(240,73,73,0.75)",
-      highlightStroke : "rgba(240,73,73,1)",
-      data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-    }
-    ]
+      label: "My Second dataset",
+      fillColor : "rgba(151,187,205,0.2)",
+      strokeColor : "rgba(151,187,205,1)",
+      pointColor : "rgba(151,187,205,1)",
+      pointStrokeColor : "#fff",
+      pointHighlightFill : "#fff",
+      pointHighlightStroke : "rgba(151,187,205,1)",
+		  data: [120, 9, 65, 300, 700, 1200, 900]
+    }]
   };
   window.onload = function(){
     var ctx = document.getElementById("canvas").getContext("2d");
