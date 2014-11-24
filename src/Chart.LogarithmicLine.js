@@ -72,15 +72,15 @@
         offsetGridLines : true,
         buildYLabels : function(){
           this.yLabels = [];
-
           var stepDecimalPlaces = 0;
-
           for (var i=0; i<=this.steps; i++){
             this.yLabels.push(helpers.template(this.templateString,{value:(Math.pow(10, i)).toFixed(stepDecimalPlaces)}));
           }
           this.yLabelWidth = (this.display && this.showLabels) ? helpers.longestText(this.ctx,this.font,this.yLabels) : 0;
         },
         calculateY : function(value){
+          if (value < 1)
+            value = 1;
           var scalingFactor = (this.endPoint - this.startPoint) / this.steps;
           return this.endPoint - (scalingFactor * log10(value));
         }
