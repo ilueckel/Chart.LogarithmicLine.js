@@ -8,6 +8,8 @@ Chart.LogarithmicLine.js
 ### Introduction
 A line chart with logarithmic y-axis is a way of showing data with a high value range.
 
+### Example image
+![Example Image](http://i.imgur.com/XJ928JF.png "Example Image")
 
 ### Example usage
 ```javascript
@@ -139,7 +141,7 @@ new Chart(ctx).LogarithmicLine(data, {
   // The new data will now animate at the end of the chart.
   ```
 
-  #### .removeData( )
+#### .removeData( )
 
   Calling `removeData()` on your Chart instance will remove the first value for all datasets on the chart.
 
